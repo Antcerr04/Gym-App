@@ -40,13 +40,14 @@ public class WorkoutActivity extends AppCompatActivity {
         recycler.setLayoutManager(new LinearLayoutManager(this));
 
         Button btnComplete = findViewById(R.id.btnCompleteWorkout);
-        adapter = new ExerciseAdapter(exerciseList, () -> {
-            // Callback: controlla se tutti gli esercizi sono completati
-            boolean allDone = exerciseList.stream().allMatch(Exercise::isCompleted);
-            btnComplete.setVisibility(allDone ? View.VISIBLE : View.GONE);
-        });
-        recycler.setAdapter(adapter);
 
+
+        adapter = new ExerciseAdapter(
+                exerciseList,
+                () -> btnComplete.setVisibility(View.VISIBLE),  // onAllCompleted
+                (exercise, newWeight) -> db.updateExercise(exercise)  // onWeightUpdated
+        );
+        recycler.setAdapter(adapter);
         btnComplete.setOnClickListener(v -> saveWorkoutToCalendar());
     }
 
