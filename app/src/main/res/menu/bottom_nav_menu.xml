@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_compass"/>
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="Calendario"
+        android:icon="@android:drawable/ic_menu_today"/>
+
+    <item
+        android:id="@+id/nav_edit"
+        android:title="Scheda"
+        android:icon="@android:drawable/ic_menu_edit"/>
+
+</menu>

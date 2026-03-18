@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EditSchemaActivity"/>
+        <activity android:name=".WorkoutActivity"/>
+        <activity android:name=".CalendarActivity"/>
     </application>
 
 </manifest>
