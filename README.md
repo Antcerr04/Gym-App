@@ -1,26 +1,77 @@
-# Gym-App
-This simple Java app was created because I had a problem: while working out at the gym, I hated writing my progress on paper or in the notes on my smartphone. Since the workout tracking apps that already existed all required a subscription, I decided to create this simple app to save my progress in a simple and organized way.
+# 🏋️ Gym App
 
-When this app is launched is possible to switch in 3 screens : 
-* Home-page : This screen appears automatically when the app is launches, and inside we can choose the muscle grouop to train between : 
-  * Leg
-  * Back
-  * Chest and biceps
-  * Chest and triceps<br>
-* Clicked on a muscle group we can see all exercise for that muscle groupp.
-For every exercise we have :
-  * Checkbox : to see that the exercise is completed
-  * Name of exercise
-  * Number of series to do of exercise
-  * Number of reps to do of exercise
-  * The maxium weight of the exercize that can i do
-  * The recovery time
-  * Plus botton to increment counter of reps executed
-  * Counter of reps executed
-    When the counter of reps executed is equal to number of reps of the exercise, automatically the checkbox of the exercise is checked
+A free, no-subscription Android workout tracker built in Java — because your gains shouldn't cost a monthly fee.
 
-* Calendar page :
-  * This screen shows a calendar and by clicking on a date i can see if on  that date i did a workout and the muscle group trained
-* Card page : This screen permit to add,delete or update exercise for every muscle group.   
+---
 
-     
+## 💡 Motivation
+
+While training at the gym I got tired of tracking my progress on paper or in my phone's notes app. Every existing workout tracker either required a subscription or was too bloated. So I built this: a simple, focused app that saves my progress in a clean and organized way.
+
+---
+
+## 📱 Screens
+
+### 🏠 Home
+The landing screen when the app launches. Select the muscle group you want to train:
+
+| Muscle Group      |
+|-------------------|
+| Legs              |
+| Back              |
+| Chest & Biceps    |
+| Chest & Triceps   |
+
+---
+
+### 💪 Exercise List
+After selecting a muscle group, you'll see all the exercises for that group. For each exercise the app shows:
+
+- ✅ **Checkbox** — marks the exercise as completed (auto-checked when reps are done)
+- 📛 **Exercise name**
+- 🔁 **Number of sets**
+- 🔢 **Number of reps per set**
+- ⚖️ **Max weight**
+- ⏱️ **Recovery time**
+- ➕ **Rep counter button** — tap to increment reps done
+- 🔢 **Reps counter** — when it reaches the target, the checkbox is automatically checked
+
+---
+
+### 📅 Calendar
+A calendar view that lets you tap on any date to check:
+- Whether you trained that day
+- Which muscle group you worked on
+
+---
+
+### 🗂️ Card Manager
+Manage your exercise library:
+- ➕ Add a new exercise to a muscle group
+- ✏️ Update an existing exercise
+- 🗑️ Delete an exercise
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java
+- **Platform:** Android
+- **Build tool:** Gradle
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Antcerr04/Gym-App.git
+   ```
+2. Open the project in **Android Studio**
+3. Build and run on an emulator or physical device
+
+---
+
+## 📄 License
+
+This project is open source and free to use. No subscriptions. No ads. No nonsense.
